@@ -1,7 +1,7 @@
 package version.eight.stream.flatMap;
 
 import data.Person;
-import util.LearningJavaDB;
+import repository.LearningJavaDB;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

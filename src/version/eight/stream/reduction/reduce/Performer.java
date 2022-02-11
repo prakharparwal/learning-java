@@ -1,9 +1,10 @@
-package version.eight.stream.filter;
+package version.eight.stream.reduction.reduce;
 
 import data.Person;
 import repository.LearningJavaDB;
 
 import java.time.LocalDate;
+import java.time.Period;
 import java.util.List;
 
 public class Performer {
@@ -11,8 +12,6 @@ public class Performer {
     public static void main(String[] args) {
         List<Person> persons = LearningJavaDB.getAllPersons();
 
-        persons.stream()
-                .filter(person -> person.dateOfBirth().isBefore(LocalDate.of(1993, 1, 1)))
-                .forEach(System.out::println);
+        System.out.println(persons.stream().map(person -> Period.between(person.dateOfBirth(), LocalDate.now()).getYears()).reduce(0, (a, b) -> a+b));
     }
 }

@@ -1,7 +1,7 @@
 package version.eight.stream.map;
 
 import data.Person;
-import util.LearningJavaDB;
+import repository.LearningJavaDB;
 
 import java.util.List;
 import java.util.Locale;

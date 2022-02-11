@@ -1,10 +1,9 @@
 package version.eight.predicate;
 
 import data.Person;
-import util.LearningJavaDB;
+import repository.LearningJavaDB;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
