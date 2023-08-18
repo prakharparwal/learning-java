@@ -15,5 +15,8 @@ public class Performer {
         System.out.println("_____");
         Parent.doSomething();
         Child.doSomething();
+
+        System.out.println("___________");
+        pc.test();
     }
 }
