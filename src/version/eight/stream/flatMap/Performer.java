@@ -13,9 +13,9 @@ public class Performer{
         List<Person> friends = LearningJavaDB.getAllPersons();
 
         List<Person> cousins = new ArrayList<>();
-        cousins.add(new Person(4, "Gunjan", LocalDate.of(1987, 1, 1)));
-        cousins.add(new Person(5, "Pratham", LocalDate.of(1997, 1, 1)));
-        cousins.add(new Person(6, "Nishu", LocalDate.of(1997, 10, 10)));
+        cousins.add(new Person(4, "Gunjan", LocalDate.of(1987, 1, 1), 60));
+        cousins.add(new Person(5, "Pratham", LocalDate.of(1997, 1, 1), 70));
+        cousins.add(new Person(6, "Nishu", LocalDate.of(1997, 10, 10), 80));
 
 
         List<List<Person>> all = new ArrayList<>();

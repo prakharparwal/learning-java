@@ -2,7 +2,7 @@ package data;
 
 import java.time.LocalDate;
 
-public record Person(int id, String name, LocalDate dateOfBirth) implements Comparable {
+public record Person(int id, String name, LocalDate dateOfBirth, double weight) implements Comparable {
     @Override
     public int compareTo(Object o) {
         Person person = (Person) o;
